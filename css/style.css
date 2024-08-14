@@ -10,13 +10,20 @@ a {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: font01;
+  src: url("../fonts/EduVICWANTBeginner-Medium.woff2") format("woff2");
+}
+
 h1 {
   text-align: center;
 }
 
 body {
-  height: 100vh;
+  height: 125vh;
   width: 100vw;
+  overflow-x: hidden;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
@@ -27,6 +34,7 @@ body {
 
 .logo {
   flex: 1;
+  background-image: url(../images/bmw.jpg);
   background-color: grey;
 }
 
@@ -37,20 +45,77 @@ body {
   background-color: lightskyblue;
 }
 
-.info,
-.form,
-.buttons {
-  flex: 1;
-}
-
 .info {
+  flex: 4;
   background-color: lightgrey;
 }
 
-.form {
+.signup-form {
+  flex: 3;
   background-color: whitesmoke;
 }
 
 .buttons {
+  flex: 4;
   background-color: lightgray;
+}
+
+.para-1,
+.para-2 {
+  width: 46ch;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.para-1 {
+  margin: 140px 40px 10px 60px;
+}
+
+.para-2 {
+  margin: 20px 40px 30px 60px;
+}
+
+.signup-form h2,
+.signup-form form {
+  margin-left: 60px;
+}
+
+.signup-form {
+  div {
+    display: inline-block;
+  }
+
+  label {
+    display: block;
+  }
+}
+
+.signup-form label {
+  color: rgba(0, 0, 0, 0.673);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.signup-form input {
+  height: 30px;
+  font-size: 16px;
+  width: 30ch;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+}
+
+.signup-form div {
+  margin-right: 70px;
+  margin-bottom: 20px;
+}
+
+.signup-form h2 {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.814);
+  margin-top: 18px;
+  margin-bottom: 25px;
+}
+
+.signup-form form {
+  margin-bottom: 20px;
 }
