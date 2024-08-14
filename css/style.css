@@ -8,6 +8,8 @@
 
 a {
   text-decoration: none;
+  color: darkolivegreen;
+  font-weight: bold;
 }
 
 @font-face {
@@ -46,17 +48,17 @@ body {
 }
 
 .info {
-  flex: 4;
+  flex: 3;
   background-color: lightgrey;
 }
 
 .signup-form {
-  flex: 3;
+  flex: 2;
   background-color: whitesmoke;
 }
 
 .buttons {
-  flex: 4;
+  flex: 3;
   background-color: lightgray;
 }
 
@@ -68,7 +70,7 @@ body {
 }
 
 .para-1 {
-  margin: 140px 40px 10px 60px;
+  margin: 150px 40px 10px 60px;
 }
 
 .para-2 {
@@ -76,7 +78,9 @@ body {
 }
 
 .signup-form h2,
-.signup-form form {
+.signup-form form,
+.buttons button,
+.buttons p {
   margin-left: 60px;
 }
 
@@ -118,4 +122,22 @@ body {
 
 .signup-form form {
   margin-bottom: 20px;
+}
+
+.buttons button {
+  margin-top: 35px;
+  background-color: darkolivegreen;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 50px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 4px 4px 12px grey;
+}
+
+.buttons p {
+  margin-top: 36px;
+  font-size: 16px;
+  font-weight: 500;
 }
