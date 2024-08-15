@@ -120,9 +120,12 @@ body {
   border: 1px solid red;
 }
 
-.signup-form div {
-  margin-right: 70px;
-  margin-bottom: 20px;
+.signup-form form {
+  margin-bottom: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 20px;
+  column-gap: 70px;
 }
 
 .signup-form h2 {
@@ -130,10 +133,6 @@ body {
   color: rgba(0, 0, 0, 0.814);
   margin-top: 18px;
   margin-bottom: 25px;
-}
-
-.signup-form form {
-  margin-bottom: 20px;
 }
 
 .buttons button {
